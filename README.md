@@ -37,8 +37,7 @@
 
 The repository is organized as a modular, stage-based analysis pipeline. Each folder corresponds to a distinct step in the benchmarking workflow, from dataset preparation to evaluation and aggregation.
 
-.
-├── 0_setup/ # Dataset acquisition and validation
+|── 0_setup/ # Dataset acquisition and validation
 ├── 1_inputs/ # Model-specific input construction
 ├── 2_run_models/ # Model output collection and standardization
 ├── 3_postprocess_predictions/ # CIF parsing, ligand and pocket extraction
@@ -48,12 +47,9 @@ The repository is organized as a modular, stage-based analysis pipeline. Each fo
 ├── evalspreadsheets/ # Intermediate and legacy evaluation CSVs
 ├── utils/ # Shared helper utilities
 ├── extract.py # Legacy extraction helper (superseded)
-├── open.py # Legacy OpenStructure helper (superseded)
 ├── run_pipeline.sh # End-to-end pipeline launcher
 └── README.md
 
-pgsql
-Copy code
 
 ### Folder Descriptions
 
