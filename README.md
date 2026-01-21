@@ -67,8 +67,8 @@ The repository is organized as a modular, stage-based analysis pipeline. Each fo
 - **`utils/`**  
   Shared helper functions and utilities used across multiple pipeline stages.
 
-- **`extract.py`, `open.py`**  
-  Legacy helper scripts retained for reference; functionality has been superseded by modular scripts within the pipeline folders.
+- **`extract.py`**  
+  Original helper script retained for reference; functionality has been superseded by modular scripts within the pipeline folders.
 
 - **`run_pipeline.sh`**  
   Convenience script to execute the full pipeline end-to-end.
