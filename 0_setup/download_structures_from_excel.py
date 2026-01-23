@@ -1,13 +1,3 @@
-"""Download PDB or CIF files from a list of PDB IDs in an Excel file.
-
-Replaces the ad-hoc Colab notebooks:
-- pdb.ipynb (download PDBs)
-- jsonprot.ipynb (download CIFs)
-
-By default, reads column 'entryName' and extracts the PDB ID as the substring
-before the first '_' character.
-"""
-
 from __future__ import annotations
 
 import argparse
