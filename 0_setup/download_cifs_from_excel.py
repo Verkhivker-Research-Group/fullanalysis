@@ -1,15 +1,3 @@
-"""Download .cif files for PDB IDs listed in an Excel file.
-
-Derived from: jsonprot.ipynb
-
-Assumptions (defaults):
-- Excel file has a column named 'entryName'
-- Each entry looks like '<PDBID>_...' and we take the substring before '_'
-
-Outputs:
-- Writes downloaded CIF files to --out-dir (default: data/structures/cif)
-"""
-
 from __future__ import annotations
 
 import argparse
