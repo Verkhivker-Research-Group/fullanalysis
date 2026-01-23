@@ -1,15 +1,3 @@
-"""Download .pdb files for PDB IDs listed in an Excel file.
-
-Derived from: pdb.ipynb
-
-Assumptions (defaults):
-- Excel file has a column named 'entryName'
-- Each entry looks like '<PDBID>_...' and we take the substring before '_'
-
-Outputs:
-- Writes downloaded PDB files to --out-dir (default: data/structures/pdb)
-"""
-
 from __future__ import annotations
 
 import argparse
