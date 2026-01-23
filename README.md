@@ -58,7 +58,7 @@ This project relies heavily on **OpenStructure (OST)** and its Python bindings:
 - `ost.mol.alg.qsscore` (QS-score)
 - `ost.mol.alg.superpose` (SuperposeSVD)
 
-> **Note:** OpenStructure is not fully supported via `pip`. Installation typically requires a conda environment or a system-level install following the official OpenStructure documentation.
+> **Note:** OpenStructure is used via a **Docker-based workflow**. All postprocessing and scoring steps are executed inside a container with OpenStructure preinstalled, so no local OpenStructure installation is required.
 
 ### Standard Library (No Installation Required)
 - `argparse`
