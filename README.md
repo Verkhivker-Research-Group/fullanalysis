@@ -37,6 +37,39 @@
 
 The repository is organized as a modular, stage-based analysis pipeline. Each folder corresponds to a distinct step in the benchmarking workflow, from dataset preparation to evaluation and aggregation.
 
+## Dependencies
+
+### Python
+- **Python 3.10+** (3.9+ may work but is not guaranteed)
+
+### Core Python Packages
+Install via `pip` or `conda`:
+- `pandas`
+- `pyyaml`
+- `biopython`
+
+### OpenStructure (Required for Postprocessing & Scoring)
+This project relies heavily on **OpenStructure (OST)** and its Python bindings:
+- `openstructure`
+- `ost`
+- `ost.mol.alg.scoring_base` (MMCIFPrep)
+- `ost.mol.alg.ligand_scoring_scrmsd` (SCRMSDScorer)
+- `ost.mol.alg.ligand_scoring_lddtpli` (LDDTPLIScorer)
+- `ost.mol.alg.qsscore` (QS-score)
+- `ost.mol.alg.superpose` (SuperposeSVD)
+
+> **Note:** OpenStructure is not fully supported via `pip`. Installation typically requires a conda environment or a system-level install following the official OpenStructure documentation.
+
+### Standard Library (No Installation Required)
+- `argparse`
+- `pathlib`
+- `json`
+- `csv`
+- `re`
+- `shutil`
+- `dataclasses`
+- `typing`
+
 
 ### Folder Descriptions
 
