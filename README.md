@@ -14,7 +14,16 @@
 
 
 ## Datasets
-#Stratification of High-Challenge Orthosteric and Allosteric Datasets
+### 1. Orthosteric (Main) Dataset
+- Canonical protein–ligand complexes derived from the DynamicBind benchmark
+- Binding sites well represented in model training distributions
+- Set of around 1100 complexes
+
+### 2. Allosteric Dataset
+- Obtained from Dunbrack Lab’s KinCoRe (Kinase Conformation Resource),
+- Ligands bind to pockets that are conformationally dynamic and spatially remote from the canonical site
+- Set of around 800 complexes
+
 
 The utility of this benchmark rests on a multi-tier dataset architecture designed to isolate the physical determinants of AI failure. To establish a high-fidelity baseline, we utilized the Major Drug Targets (MDT) Mainset as our orthosteric reference. To ensure this dataset probed genuine structural reconstruction rather than database memorization, we applied three stringent filters: (1) Temporal decoupling, restricting selection to complexes deposited in the Protein Data Bank (PDB) after 2020 to ensure they post-date the training sets of AF3 and its contemporaries; (2) Biological relevance, focusing on four critical pharmaceutical families—kinases, GPCRs, nuclear receptors, and ion channels; and (3) Structural challenge, requiring that the initial AlphaFold-predicted apo-pocket differ from the experimental holo-conformation by a Pocket RMSD > 2.0 Å or a Pocket LDDT < 0.8.
 To interrogate the "allosteric blind spot," we constructed an expanded Allosteric Ensemble representing the most diverse collection of regulatory sites benchmarked to date. This includes a kinase-centric subset from the Kinase Conformation Resource (KinCoRe), featuring 217 complexes of Type III (back-pocket) and Type IV (distal myristoyl-site) inhibitors. This was supplemented by a curated crystallographic dataset of 136 allosteric kinase inhibitors confirmed via X-ray diffraction.86 To ensure our findings transcend the kinome, we incorporated the Diversified Allosteric Subset, containing 1,613 structures and 1,277 unique ligands across non-kinase families, providing a statistically robust probe into the energetic heterogeneity of allostery.
