@@ -20,14 +20,23 @@
 - Set of around 1100 complexes
 
 ### 2. Allosteric Dataset
-- Obtained from Dunbrack Lab’s KinCoRe (Kinase Conformation Resource),
-- Ligands bind to pockets that are conformationally dynamic and spatially remote from the canonical site
-- Set of around 800 complexes
+- Designed to interrogate the allosteric blind spot in protein–ligand structure prediction
+- Ligands bind to conformationally dynamic pockets spatially remote from canonical active sites
 
+**Components:**
+- **Kinase-Centric Subset (KinCoRe):**
+  - Obtained from Dunbrack Lab’s Kinase Conformation Resource (KinCoRe)
+  - 217 complexes of Type III (back-pocket) and Type IV (distal myristoyl-site) kinase inhibitors
 
-The utility of this benchmark rests on a multi-tier dataset architecture designed to isolate the physical determinants of AI failure. To establish a high-fidelity baseline, we utilized the Major Drug Targets (MDT) Mainset as our orthosteric reference. To ensure this dataset probed genuine structural reconstruction rather than database memorization, we applied three stringent filters: (1) Temporal decoupling, restricting selection to complexes deposited in the Protein Data Bank (PDB) after 2020 to ensure they post-date the training sets of AF3 and its contemporaries; (2) Biological relevance, focusing on four critical pharmaceutical families—kinases, GPCRs, nuclear receptors, and ion channels; and (3) Structural challenge, requiring that the initial AlphaFold-predicted apo-pocket differ from the experimental holo-conformation by a Pocket RMSD > 2.0 Å or a Pocket LDDT < 0.8.
-To interrogate the "allosteric blind spot," we constructed an expanded Allosteric Ensemble representing the most diverse collection of regulatory sites benchmarked to date. This includes a kinase-centric subset from the Kinase Conformation Resource (KinCoRe), featuring 217 complexes of Type III (back-pocket) and Type IV (distal myristoyl-site) inhibitors. This was supplemented by a curated crystallographic dataset of 136 allosteric kinase inhibitors confirmed via X-ray diffraction.86 To ensure our findings transcend the kinome, we incorporated the Diversified Allosteric Subset, containing 1,613 structures and 1,277 unique ligands across non-kinase families, providing a statistically robust probe into the energetic heterogeneity of allostery.
+- **Curated Allosteric Kinase Set:**
+  - 136 experimentally validated allosteric kinase inhibitors
+  - Confirmed via X-ray crystallography (Hu et al., 2021)
 
+- **Diversified Allosteric Subset (Non-Kinase):**
+  - 1,613 structures spanning non-kinase protein families
+  - 1,277 unique ligands
+  - Derived from a large-scale ligand binding pocket dataset for drug discovery (Moine-Franel et al., 2024)
+  - Provides a statistically robust probe into the energetic heterogeneity of allostery
 
 ## Evaluation Metrics
 ### Ligand-Level Accuracy
@@ -115,3 +124,15 @@ This project relies heavily on **OpenStructure (OST)** and its Python bindings:
   Convenience script to execute the full pipeline end-to-end.
 
 - lDDT-PLI (ligand–protein interaction accuracy)
+
+
+## References
+
+Hu H, Laufkötter O, Miljković F, Bajorath J.  
+Data set of competitive and allosteric protein kinase inhibitors confirmed by X-ray crystallography.  
+*Data Brief*. 2021;35:106816. doi:10.1016/j.dib.2021.106816
+
+Moine-Franel A, Mareuil F, Nilges M, Ciambur CB, Sperandio O.  
+A comprehensive dataset of protein-protein interactions and ligand binding pockets for advancing drug discovery.  
+*Scientific Data*. 2024;11(1):402. doi:10.1038/s41597-024-03233-z
+
