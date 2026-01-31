@@ -128,11 +128,13 @@ This project relies heavily on **OpenStructure (OST)** and its Python bindings:
 
 ## References
 
-Hu H, Laufkötter O, Miljković F, Bajorath J.  
-Data set of competitive and allosteric protein kinase inhibitors confirmed by X-ray crystallography.  
-*Data Brief*. 2021;35:106816. doi:10.1016/j.dib.2021.106816
+1. **Hu H, Laufkötter O, Miljković F, Bajorath J.**  
+   *Data set of competitive and allosteric protein kinase inhibitors confirmed by X-ray crystallography.*  
+   Data Brief, 2021, **35**:106816.  
+   https://doi.org/10.1016/j.dib.2021.106816
 
-Moine-Franel A, Mareuil F, Nilges M, Ciambur CB, Sperandio O.  
-A comprehensive dataset of protein-protein interactions and ligand binding pockets for advancing drug discovery.  
-*Scientific Data*. 2024;11(1):402. doi:10.1038/s41597-024-03233-z
+2. **Moine-Franel A, Mareuil F, Nilges M, Ciambur CB, Sperandio O.**  
+   *A comprehensive dataset of protein–protein interactions and ligand binding pockets for advancing drug discovery.*  
+   Scientific Data, 2024, **11**(1):402.  
+   https://doi.org/10.1038/s41597-024-03233-z
 
